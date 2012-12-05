@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+#        article: masculino/femenino
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: Crear nuevo longdrink
+            reorder: Reordenar longdrinks
+            reorder_done: Reordenación de longdrinks completada
+          records:
+            title: Longdrinks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay longdrinks todavía. Pulsa en "Crear nuevo Longdrink" para crear tu primer longdrink.
+          longdrink:
+            view_live_html: Ver este longdrink como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este longdrink
+            delete: Borrar este longdrink para siempre
+      longdrinks:
+        show:
+          other: Otros longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors

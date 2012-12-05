@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Longdrinks::Admin::LongdrinksController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.longdrinks_admin_longdrinks_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_longdrinks_admin_longdrink_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Longdrinks::Admin::LongdrinksController.sortable? && ::Refinery::Longdrinks::Longdrink.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Longdrinks"),
+                 refinery.longdrinks_admin_longdrinks_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Longdrinks"),
+                 refinery.longdrinks_admin_longdrinks_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

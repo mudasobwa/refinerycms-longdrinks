@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Longdrink
+            reorder: Réordonner les Longdrinks
+            reorder_done: Fin de réordonnancement des Longdrinks
+          records:
+            title: Longdrinks
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Longdrink. Cliquer sur "Créer un(e) nouve(au/l/lle) Longdrink" pour créer votre premi(er/ère) longdrink.'
+          longdrink:
+            view_live_html: Voir ce(t/tte) longdrink <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) longdrink
+            delete: Supprimer définitivement ce(t/tte) longdrink
+      longdrinks:
+        show:
+          other: Autres Longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors

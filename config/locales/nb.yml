@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: Lag en ny Longdrink
+            reorder: Endre rekkefølgen på Longdrinks
+            reorder_done: Ferdig å endre rekkefølgen Longdrinks
+          records:
+            title: Longdrinks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Longdrinks enda. Klikk på "Lag en ny Longdrink" for å legge til din første longdrink.
+          longdrink:
+            view_live_html: Vis hvordan denne longdrink ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne longdrink
+            delete: Fjern denne longdrink permanent
+      longdrinks:
+        show:
+          other: Andre Longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors

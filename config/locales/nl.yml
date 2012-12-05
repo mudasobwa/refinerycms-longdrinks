@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: Maak een nieuwe Longdrink
+            reorder: Wijzig de volgorde van de Longdrinks
+            reorder_done: Klaar met het wijzingen van de volgorde van de Longdrinks
+          records:
+            title: Longdrinks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Longdrinks. Druk op 'Maak een nieuwe Longdrink' om de eerste aan te maken.
+          longdrink:
+            view_live_html: Bekijk deze longdrink op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze longdrink
+            delete: Verwijder deze longdrink voor eeuwig
+      longdrinks:
+        show:
+          other: Andere Longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors

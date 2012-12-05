@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: 建立新的 Longdrink
+            reorder: 对 Longdrinks 重新排序
+            reorder_done: 对 Longdrinks 的重新排序结束
+          records:
+            title: Longdrinks
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Longdrinks yet. Click "Add New Longdrink" to add your first longdrink.
+            no_items_yet: 目前没有 Longdrinks . 点击 "Add New Longdrink" 创建一个longdrink.
+          longdrink:
+            view_live_html: 查看 longdrink 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 longdrink
+            delete: 永久删除 longdrink
+      longdrinks:
+        show:
+          other: 其他 Longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors

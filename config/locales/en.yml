@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      longdrinks:
+        title: Longdrinks
+    longdrinks:
+      admin:
+        longdrinks:
+          actions:
+            create_new: Add New Longdrink
+            reorder: Reorder Longdrinks
+            reorder_done: Done Reordering Longdrinks
+          records:
+            title: Longdrinks
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Longdrinks yet. Click "Add New Longdrink" to add your first longdrink.
+          longdrink:
+            view_live_html: View this longdrink live <br/><em>(opens in a new window)</em>
+            edit: Edit this longdrink
+            delete: Remove this longdrink forever
+      longdrinks:
+        show:
+          other: Other Longdrinks
+  activerecord:
+    attributes:
+      'refinery/longdrinks/longdrink':
+        title: Title
+        command: Command
+        started: Started
+        finished: Finished
+        errors: Errors
