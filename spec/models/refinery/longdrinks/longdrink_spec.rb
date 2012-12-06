@@ -10,7 +10,7 @@ module Refinery
         end
 
         it { should be_valid }
-        its(:errors) { should be_empty }
+        its(:problems) { should be_empty }
         its(:title) { should == "Refinery CMS" }
       end
     end

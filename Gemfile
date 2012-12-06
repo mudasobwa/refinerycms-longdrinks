@@ -5,6 +5,9 @@ gemspec
 gem 'refinerycms', '~> 2.0.3'
 gem 'refinerycms-i18n', '~> 2.0.2'
 
+gem 'eventmachine', '~> 1.0.0'
+gem 'activesupport'
+
 # Database Configuration
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'
@@ -16,7 +19,7 @@ end
 platforms :ruby do
   gem 'sqlite3'
   gem 'mysql2'
-  gem 'pg'
+#  gem 'pg'
 end
 
 group :development, :test do

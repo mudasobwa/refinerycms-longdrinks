@@ -6,7 +6,7 @@ class CreateLongdrinksLongdrinks < ActiveRecord::Migration
       t.text :command
       t.datetime :started
       t.datetime :finished
-      t.text :errors
+      t.text :problems
       t.integer :position
 
       t.timestamps

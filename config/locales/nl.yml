@@ -28,4 +28,4 @@ nl:
         command: Command
         started: Started
         finished: Finished
-        errors: Errors
+        problems: Problems
